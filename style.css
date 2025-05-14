@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+
+body{
+ background: #e2e9e3;   
+}
+
+.container{
+    width: 30%;
+    height: auto;
+    background: orange;
+    margin: 100px auto;
+}
+.box{
+    background: rgb(255, 254, 252);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    
+}
+
+
+
+ .name{
+    text-align: center;
+    color: #28a745;
+    font-size: 18px;
+}
+
+.box-content {
+    padding: 0;
+    margin: 20px;
+    max-width: 500px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .accordian-item{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .option-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .option:last-child {
+    border-bottom: none;
+  }
+  
+  .option input[type="radio"] {
+    margin-right: 15px;
+    transform: scale(1.2);
+  }
+  
+  .option-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .option-left h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .option-left span {
+    color: #fff;
+    background: #28a745;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+  
+  .option-left p {
+    margin: 5px 0 0;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .option-right {
+    text-align: right;
+    min-width: 120px;
+  }
+  
+  .option-right h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .option-right .strikethrough {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 5px;
+  }
+ /* -------------------------------------------------------  */
+
+ .accordian-body{
+    display: none;
+    padding: 10px 15px;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+ }
+
+
+ .selectors {
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+  }
+
+  .selector-serial {
+    
+    font-size: 13px;
+    color: #6c6464;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 25px;
+   
+  }
+  
+  .select-group {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  
+  .select-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .select-group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #fff;
+  }
+
+  .final-section {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+    background-color: #f9fff9;
+  }
+  .shipping{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  
+  }
+
+  .total{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+  }
+
+  .ship-info {
+    color: #28a745;
+  }
+
+  .total{
+    color: #28a745
+  }
+  .price {
+    color: #000;
+  }
+
+  .adding {
+    width: 100%;
+    background-color: #28a745;
+    color: white;
+    padding: 12px 0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .adding:hover {
+    background-color: #218838;
+  }
+  
+  @media (max-width: 500px){
+    .box{
+        background: rgb(255, 254, 252);
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        margin-bottom: 20px;
+        
+    }
+    
+    
+    .box-content {
+   
+    margin: 10px;
+    max-width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .accordian-item{
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+    .option-details {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    .selectors{
+        flex-direction: column;
+    }
+    .option-left, .option-right {
+        width: 100%;
+      }
+
+  }
